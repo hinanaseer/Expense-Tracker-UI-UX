@@ -1,76 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./assests/css/style.css">
-    <title>Expense Tracker</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    
-   
-</head>
-<body>
-<div class="app">
-    <h1>Expense Tracker</h1>
- 
-<div class
-="Balance-container">
-<h2>Your Current Balance</h2>
-<div id="balance">Rs.1000</div>
-</div>
-<div class="cashflow-container">
-    <div class="income-container">
-        <h2>Income</h2>
-        <div id="income">Rs.1200</div>
-    </div>
-    <div class="expense-container">
-        <h2>Expense</h2>
-        <div id="expense">Rs.200</div>
-    </div>
-</div>
-<div class="transaction-container">
-    <h2>Transaction History</h2>
-    <ul id="transaction">
-        <!-- <li>Salary
-        <div>    
-            <span class="income-amnt">Rs.5000</span>
-            <button>X</button>
-        </div>
-    </li>
-    <li>Buy Grocery
-        <div>    
-            <span class="expense-amnt">Rs.50</span>
-            <button>X</button>
-        </div>
-    </li>
-    <li>Buy Guitar
-        <div>    
-            <span class="expense-amnt">Rs.500</span>
-            <button>X</button>
-        </div> -->
-    <!-- </li>
-    <li>Buy Misc items
-        <div>    
-            <span class="expense-amnt">Rs.500</span>
-            <button>X</button>
-        </div>
-    </li> -->
-</ul>
-</div>
-<div class="form-container">
-    <h2>Add new transaction</h2>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name">
-        <label for="amount">Amount</label>
-        <input type="number" id="amount">
-        <button class="incomebtn">Add Income</button>
-        <button class="expensebtn">Add Expense</button>
-    </form>
-</div>
-</div> 
+<html>
+    <head>
+        <title>Expense Tracker</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assests/css/style.css">
+        </head>
+    <body>
+        <div class="app">
+            <h1>Expense Tracker</h1>
 
-    <script src="assests/js/app.js"></script>
-</body>
+            <div class="balance-container">
+                <h2>Your Balance</h2>
+                <div id="balance">$1000</div>
+            </div>
+
+            <div class="cashflow-container">
+                <div class="income-container">
+                    <h2>Income</h2>
+                    <div id="income">$1200</div>
+                </div>
+                <div class="expense-container">
+                    <h2>Expense</h2>
+                    <div id="expense">$200</div>
+                </div>
+            </div>
+
+            <div class="transaction-container">
+                <h2>Transaction History</h2>
+                <ul id="transaction">
+                    
+                </ul>
+            </div>
+
+            <div class="form-container">
+                <h2>Add new transaction</h2>
+                <form onsubmit="return false;">
+                    <label for="Description">Description</label>
+                    <input id="Description" type="text">
+                    <label for="amount">Amount</label>
+                    <input id="amount" type="number">
+                    <button id="incomeBtn">Add Income</button>
+                    <button id="expenseBtn">Add Expense</button>
+                </form>
+            </div>
+        </div>
+        <script src="./assests/js/app.js"></script>
+    </body>
 </html>
